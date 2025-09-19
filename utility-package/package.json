@@ -1,0 +1,56 @@
+{
+  "name": "@my-company/utils",
+  "version": "1.0.3",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roofing-Made-Simple/instant-quote-utils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roofing-Made-Simple/instant-quote-utils/issues"
+  },
+  "homepage": "https://github.com/Roofing-Made-Simple/instant-quote-utils#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.17.20",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.888.0",
+    "@aws-sdk/lib-storage": "^3.888.0",
+    "@mapbox/tilebelt": "^2.0.2",
+    "@mapbox/vector-tile": "^2.0.4",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.56.1",
+    "@turf/bbox": "^7.2.0",
+    "@turf/turf": "^7.2.0",
+    "axios": "^1.11.0",
+    "base64-js": "^1.5.1",
+    "esbuild": "^0.25.9",
+    "geojson": "^0.5.0",
+    "lodash": "^4.17.21",
+    "nanoid": "^5.1.5",
+    "pbf": "^4.0.1"
+  }
+}
